@@ -1,0 +1,120 @@
+.gtwelve-rating-badge-shell {
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+}
+
+.gtwelve-rating-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 14px;
+    padding: 10px 14px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .2);
+    color: #111;
+    max-width: 92vw;
+    text-decoration: none;
+    transition: background-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+
+.gtwelve-rating-badge__logo {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 14px;
+    margin-right: 14px;
+    border-right: 1px solid #e0e0e0;
+    flex: 0 0 auto;
+}
+
+.gtwelve-rating-badge__logo img,
+.gtwelve-rating-badge__logo svg {
+    width: 32px;
+    height: 32px;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.gtwelve-rating-badge__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+}
+
+.gtwelve-rating-badge__stars {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.gtwelve-rating-badge__stars-fill {
+    color: #f4b400;
+    letter-spacing: 1px;
+}
+
+.gtwelve-rating-badge__score {
+    color: #111;
+}
+
+.gtwelve-rating-badge__title {
+    color: #111;
+}
+
+.gtwelve-rating-badge__verified {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #030303;
+}
+
+.gtwelve-rating-badge__info {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #9a9a9a;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    position: relative;
+    cursor: help;
+}
+
+.gtwelve-rating-badge__disclaimer {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    width: 260px;
+    max-width: 70vw;
+    background: #fff;
+    color: #111;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 10px 12px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .25);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: auto;
+    transition: opacity .2s ease, transform .2s ease;
+    z-index: 5;
+    text-align: left;
+}
+
+.gtwelve-rating-badge__disclaimer a {
+    color: #0b5fff;
+    text-decoration: underline;
+}
+
+.gtwelve-rating-badge__info:hover .gtwelve-rating-badge__disclaimer,
+.gtwelve-rating-badge__info:focus-within .gtwelve-rating-badge__disclaimer,
+.gtwelve-rating-badge__disclaimer:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-2px);
+}

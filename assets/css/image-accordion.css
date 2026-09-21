@@ -1,0 +1,107 @@
+.gtwelve-image-accordion {
+	display: flex;
+	gap: 0.4rem;
+	height: var(--gtwelve-image-accordion-height, 420px);
+	position: relative;
+	overflow: hidden;
+}
+
+.gtwelve-image-accordion__item {
+	position: relative;
+	flex: 1 1 0;
+	min-width: 0;
+	background-position: center;
+	background-size: cover;
+	border-radius: 12px;
+	overflow: hidden;
+	transition: flex 320ms ease, transform 320ms ease;
+}
+
+.gtwelve-image-accordion__overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(145deg, rgba(0, 0, 0, 0.52) 0%, rgba(0, 0, 0, 0.28) 40%, rgba(0, 0, 0, 0.6) 100%);
+	transition: opacity 240ms ease;
+}
+
+.gtwelve-image-accordion__content {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+	padding: 1.4rem;
+	color: #fff;
+	text-align: left;
+}
+
+.gtwelve-image-accordion__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 100%;
+	width: 100%;
+}
+
+.gtwelve-image-accordion__title {
+	margin: 0;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 1.2;
+	transition: transform 240ms ease, opacity 240ms ease;
+}
+
+.gtwelve-image-accordion__description {
+	margin: 0;
+	max-height: 0;
+	min-height: 44px;
+	overflow: hidden;
+	opacity: 0;
+	font-size: 15px;
+	line-height: 1.4;
+	transform: translateY(10px);
+	transition: transform 240ms ease, opacity 240ms ease, max-height 240ms ease;
+}
+
+.gtwelve-image-accordion__item:hover,
+.gtwelve-image-accordion__item.is-active {
+	flex: 1.4 1 0;
+}
+
+.gtwelve-image-accordion__item:hover .gtwelve-image-accordion__overlay,
+.gtwelve-image-accordion__item.is-active .gtwelve-image-accordion__overlay {
+	opacity: 1;
+}
+
+.gtwelve-image-accordion__item:hover .gtwelve-image-accordion__title,
+.gtwelve-image-accordion__item.is-active .gtwelve-image-accordion__title {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.gtwelve-image-accordion__item:hover .gtwelve-image-accordion__description,
+.gtwelve-image-accordion__item.is-active .gtwelve-image-accordion__description {
+	margin-top: 0.45rem;
+	max-height: 8rem;
+	opacity: 0.95;
+	transform: translateY(0);
+}
+
+.gtwelve-image-accordion:has(.gtwelve-image-accordion__item:hover) .gtwelve-image-accordion__item:not(:hover) {
+	flex: 0.9 1 0;
+}
+
+@media (max-width: 767px) {
+	.gtwelve-image-accordion {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.gtwelve-image-accordion__item,
+	.gtwelve-image-accordion:has(.gtwelve-image-accordion__item:hover) .gtwelve-image-accordion__item,
+	.gtwelve-image-accordion__item:hover,
+	.gtwelve-image-accordion__item.is-active {
+		flex: 1 1 auto;
+		min-height: var(--gtwelve-image-accordion-height, 240px);
+	}
+}

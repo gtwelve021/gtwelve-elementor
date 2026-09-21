@@ -1,0 +1,219 @@
+.g12-vibe-video-section {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	padding: 18px 0 90px !important;
+}
+
+.g12-vibe-video-section .panorama-slider {
+	position: relative;
+	max-width: 63%;
+	margin: 75px auto 0;
+	padding: 0;
+	overflow: unset;
+	perspective: 1200px;
+}
+
+.g12-vibe-video-section .panorama-slider .swiper {
+	height: 100% !important;
+	overflow: visible !important;
+}
+
+.g12-vibe-video-section .panorama-slider .swiper-wrapper {
+	margin: 0 !important;
+	padding: 0 !important;
+	align-items: center;
+}
+
+.g12-vibe-video-section .panorama-slider .swiper-slide {
+	flex-shrink: 0;
+	height: auto;
+	transition: transform 0.3s ease;
+	transform-style: preserve-3d;
+}
+
+.g12-vibe-video-section .panorama-slider .video-box {
+	position: relative;
+	z-index: 20;
+	transition: all 0.4s ease-in-out;
+}
+
+.g12-vibe-video-section .panorama-slider .video-box video {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 9 / 16;
+	object-fit: cover;
+	background: #e9dfd5;
+	border-radius: 20px;
+}
+
+.g12-vibe-video-section .panorama-slider .g12-vibe-video-mute {
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	z-index: 55;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(17, 17, 17, 0.72);
+	border: 1px solid rgba(255, 255, 255, 0.28);
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	color: #ffffff;
+	cursor: pointer;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.g12-vibe-video-section .panorama-slider .g12-vibe-video-mute:hover {
+	background: rgba(17, 17, 17, 0.9);
+	transform: scale(1.05);
+}
+
+.g12-vibe-video-section .panorama-slider .g12-vibe-video-mute[hidden] {
+	display: none;
+}
+
+.g12-vibe-video-section .panorama-slider .g12-vibe-video-mute:focus {
+	outline: 2px solid #ffffff;
+	outline-offset: 2px;
+}
+
+.g12-vibe-video-section .panorama-slider .g12-vibe-video-mute-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 18px;
+	height: 18px;
+}
+
+.g12-vibe-video-section .panorama-slider .g12-vibe-video-mute-icon[hidden] {
+	display: none;
+}
+
+.g12-vibe-video-section .panorama-slider .g12-vibe-video-mute-icon svg {
+	width: 18px;
+	height: 18px;
+	display: block;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 1.8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.g12-vibe-video-section .panorama-slider .g12-vibe-video-mute-icon svg path:first-child {
+	fill: currentColor;
+	stroke: none;
+}
+
+.g12-vibe-video-section .panorama-slider .video-box a.video-link {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+	width: 180px;
+	height: 50px;
+	margin: auto;
+	border-radius: 50px;
+	background-color: #ffffff;
+	color: #000000 !important;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none !important;
+	opacity: 0;
+	pointer-events: auto;
+	transition: all 0.4s ease-in-out;
+}
+
+.g12-vibe-video-section .panorama-slider .video-box:hover a.video-link,
+.g12-vibe-video-section .panorama-slider .video-box:focus-within a.video-link {
+	bottom: 20px;
+	opacity: 1;
+}
+
+.g12-vibe-video-section .panorama-slider .swiper-pagination {
+	bottom: -75px !important;
+}
+
+.g12-vibe-video-section .panorama-slider .swiper-pagination-bullet {
+	width: 28px !important;
+	height: 8px !important;
+	border-radius: 5px !important;
+	background-color: #000000 !important;
+	opacity: 1;
+}
+
+.g12-vibe-video-section .panorama-slider .slide-image {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: none !important;
+}
+
+.g12-vibe-video-section .panorama-slider .slide-image img {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* Keep the Elementor canvas usable while its iframe is loading Swiper. */
+.elementor-editor-active .g12-vibe-video-swiper:not(.swiper-initialized) {
+	overflow: hidden !important;
+}
+
+.elementor-editor-active .g12-vibe-video-swiper:not(.swiper-initialized) .g12-vibe-video-track {
+	display: grid !important;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 20px;
+	transform: none !important;
+}
+
+.elementor-editor-active .g12-vibe-video-swiper:not(.swiper-initialized) .g12-vibe-video-slide {
+	width: auto !important;
+	margin: 0 !important;
+	transform: none !important;
+}
+
+.elementor-editor-active .g12-vibe-video-swiper:not(.swiper-initialized) .g12-vibe-video-slide:nth-child(n+4),
+.elementor-editor-active .g12-vibe-video-swiper:not(.swiper-initialized) .g12-vibe-video-pagination {
+	display: none !important;
+}
+
+
+@media (max-width: 1440px) {
+	.g12-vibe-video-section .panorama-slider {
+		max-width: 63%;
+	}
+}
+
+@media (max-width: 767px) {
+	.g12-vibe-video-section {
+		padding: 18px 0 70px;
+	}
+
+	.g12-vibe-video-section .panorama-slider {
+		max-width: min(360px, calc(100% - 40px));
+		margin-top: 30px;
+	}
+
+	.g12-vibe-video-section .panorama-slider .swiper-pagination {
+		bottom: -45px;
+	}
+
+	.elementor-editor-active .g12-vibe-video-swiper:not(.swiper-initialized) .g12-vibe-video-track {
+		grid-template-columns: 1fr;
+	}
+
+	.elementor-editor-active .g12-vibe-video-swiper:not(.swiper-initialized) .g12-vibe-video-slide:nth-child(n+2) {
+		display: none !important;
+	}
+}

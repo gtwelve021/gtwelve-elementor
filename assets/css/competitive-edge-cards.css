@@ -1,0 +1,158 @@
+.g12-competitive-edge {
+	width: 100%;
+}
+
+.g12-competitive-edge *,
+.g12-competitive-edge *::before,
+.g12-competitive-edge *::after { box-sizing: border-box; }
+
+.g12-competitive-edge__heading {
+	margin: 0 0 40px;
+	color: #000;
+	font-size: clamp(28px, 3.3vw, 40px);
+	font-weight: 700;
+	line-height: 1.1;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.g12-competitive-edge__grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 30px;
+}
+
+.g12-competitive-edge__card {
+	--g12-edge-card-bg: #000;
+	position: relative;
+	display: flex;
+	min-width: 0;
+	min-height: 406px;
+	padding: 20px;
+	overflow: hidden;
+	background: var(--g12-edge-card-bg);
+	isolation: isolate;
+}
+
+.g12-competitive-edge__card--gold { --g12-edge-card-bg: #d6a456; }
+
+.g12-competitive-edge__card::before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	inset: 0;
+	background: var(--g12-edge-card-bg);
+	opacity: .96;
+	transform: translate3d(-101%, 0, 0);
+	transition: transform .38s cubic-bezier(.22, .61, .36, 1);
+}
+
+.g12-competitive-edge__content {
+	position: relative;
+	z-index: 3;
+	width: 100%;
+}
+
+.g12-competitive-edge__title {
+	margin: 0;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.32;
+	letter-spacing: -.02em;
+}
+
+.g12-competitive-edge__description {
+	margin-top: 12px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.55;
+}
+
+.g12-competitive-edge__description > :first-child { margin-top: 0; }
+.g12-competitive-edge__description > :last-child { margin-bottom: 0; }
+.g12-competitive-edge__description a { color: inherit; }
+
+.g12-competitive-edge__image-wrap {
+	position: absolute;
+	z-index: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.g12-competitive-edge__image {
+	display: block;
+	width: 88%;
+	max-width: none;
+	height: auto;
+	object-fit: contain;
+	object-position: center bottom;
+	transform-origin: center bottom;
+	transition: opacity .32s ease, transform .4s ease;
+}
+
+.g12-competitive-edge--hover-reveal .g12-competitive-edge__description {
+	max-height: 0;
+	margin-top: 0;
+	overflow: hidden;
+	opacity: 0;
+	transform: translate3d(0, 10px, 0);
+	transition: max-height .38s ease, margin-top .3s ease, opacity .25s ease, transform .3s ease;
+}
+
+.g12-competitive-edge--hover-reveal .g12-competitive-edge__card:hover::before,
+.g12-competitive-edge--hover-reveal .g12-competitive-edge__card:focus::before,
+.g12-competitive-edge--hover-reveal .g12-competitive-edge__card:focus-within::before { transform: none; }
+
+.g12-competitive-edge--hover-reveal .g12-competitive-edge__card:hover .g12-competitive-edge__description,
+.g12-competitive-edge--hover-reveal .g12-competitive-edge__card:focus .g12-competitive-edge__description,
+.g12-competitive-edge--hover-reveal .g12-competitive-edge__card:focus-within .g12-competitive-edge__description {
+	max-height: 500px;
+	margin-top: 12px;
+	opacity: 1;
+	transform: none;
+}
+
+.g12-competitive-edge--hover-reveal .g12-competitive-edge__card:hover .g12-competitive-edge__image,
+.g12-competitive-edge--hover-reveal .g12-competitive-edge__card:focus .g12-competitive-edge__image,
+.g12-competitive-edge--hover-reveal .g12-competitive-edge__card:focus-within .g12-competitive-edge__image {
+	opacity: .22;
+	transform: scale(1.035);
+}
+
+.g12-competitive-edge__card:focus-visible {
+	outline: 3px solid #fff;
+	outline-offset: -6px;
+}
+
+@media (max-width: 1024px) {
+	.g12-competitive-edge__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+	.g12-competitive-edge__image { width: 72%; }
+}
+
+@media (max-width: 767px) {
+	.g12-competitive-edge__heading { margin-bottom: 32px; font-size: 28px; }
+	.g12-competitive-edge__grid { grid-template-columns: 1fr; gap: 20px; }
+	.g12-competitive-edge__card { min-height: 440px; }
+	.g12-competitive-edge__image { width: 80%; }
+	.g12-competitive-edge--hover-reveal .g12-competitive-edge__card::before { display: none; }
+	.g12-competitive-edge--hover-reveal .g12-competitive-edge__description { max-height: none; margin-top: 12px; opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.g12-competitive-edge__card::before,
+	.g12-competitive-edge__image,
+	.g12-competitive-edge--hover-reveal .g12-competitive-edge__description { transition: none; }
+	.g12-competitive-edge--hover-reveal .g12-competitive-edge__description { max-height: none; margin-top: 12px; opacity: 1; transform: none; }
+}
+
+.elementor-editor-active .g12-competitive-edge--hover-reveal .g12-competitive-edge__description {
+	max-height: none;
+	margin-top: 12px;
+	opacity: 1;
+	transform: none;
+}

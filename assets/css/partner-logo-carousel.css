@@ -1,0 +1,138 @@
+.g12-partner-carousel {
+	--g12-partner-duration: 38s;
+	--g12-partner-gap: 60px;
+	width: 100%;
+}
+
+.g12-partner-carousel,
+.g12-partner-carousel *,
+.g12-partner-carousel *::before,
+.g12-partner-carousel *::after {
+	box-sizing: border-box;
+}
+
+.g12-partner-carousel__header {
+	text-align: center;
+}
+
+.g12-partner-carousel__heading {
+	margin: 0 0 16px;
+	color: #111;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.g12-partner-carousel__description,
+.g12-partner-carousel__description p {
+	margin: 0;
+}
+
+.g12-partner-carousel__viewport {
+	display: flex;
+	width: 100%;
+	height: 70px;
+	margin-top: 20px;
+	padding: 10px;
+	align-items: center;
+	overflow: hidden;
+	border-radius: 50px;
+	background: #f0f5fc;
+	white-space: nowrap;
+}
+
+.g12-partner-carousel__track {
+	display: flex;
+	width: max-content;
+	min-width: max-content;
+	align-items: center;
+	animation: g12-partner-marquee var(--g12-partner-duration) linear infinite;
+	will-change: transform;
+}
+
+.g12-partner-carousel--right .g12-partner-carousel__track {
+	animation-direction: reverse;
+}
+
+.g12-partner-carousel--pause .g12-partner-carousel__viewport:hover .g12-partner-carousel__track,
+.g12-partner-carousel--pause .g12-partner-carousel__viewport:focus-within .g12-partner-carousel__track {
+	animation-play-state: paused;
+}
+
+.g12-partner-carousel__group {
+	display: flex;
+	padding-right: var(--g12-partner-gap);
+	align-items: center;
+	flex: 0 0 auto;
+	gap: var(--g12-partner-gap);
+}
+
+.g12-partner-carousel__logo {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex: 0 0 auto;
+}
+
+.g12-partner-carousel__logo img {
+	display: block;
+	width: auto !important;
+	max-width: none;
+	height: 40px;
+	object-fit: contain;
+	transition: filter .3s ease, opacity .3s ease, transform .3s ease;
+}
+
+.g12-partner-carousel--grayscale .g12-partner-carousel__logo img {
+	filter: grayscale(100%);
+}
+
+.g12-partner-carousel--grayscale .g12-partner-carousel__logo:hover img,
+.g12-partner-carousel--grayscale .g12-partner-carousel__logo:focus-visible img {
+	filter: grayscale(0%);
+}
+
+.g12-partner-carousel__logo:hover img,
+.g12-partner-carousel__logo:focus-visible img {
+	transform: translateY(-1px);
+}
+
+.g12-partner-carousel__logo:focus-visible {
+	outline: 2px solid #ab8134;
+	outline-offset: 4px;
+}
+
+@keyframes g12-partner-marquee {
+	from { transform: translate3d(0, 0, 0); }
+	to { transform: translate3d(-50%, 0, 0); }
+}
+
+@media (max-width: 600px) {
+	.g12-partner-carousel {
+		--g12-partner-gap: 30px;
+	}
+
+	.g12-partner-carousel__heading {
+		font-size: 21px;
+	}
+
+	.g12-partner-carousel__logo img {
+		height: 26px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.g12-partner-carousel__viewport {
+		overflow-x: auto;
+		scrollbar-width: thin;
+	}
+
+	.g12-partner-carousel__track {
+		animation: none;
+		will-change: auto;
+	}
+
+	.g12-partner-carousel__group[aria-hidden="true"] {
+		display: none;
+	}
+}

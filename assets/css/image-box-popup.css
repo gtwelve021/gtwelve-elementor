@@ -1,0 +1,39 @@
+.g12-ibwp,
+.g12-ibwp * { box-sizing: border-box; }
+.g12-ibwp__excerpt > :last-child,
+.g12-ibwp__popup-text > :last-child { margin-bottom: 0; }
+.g12-ibwp__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 5rem; row-gap: 3rem; }
+.g12-ibwp__card { min-width: 0; border-bottom: 1px solid #ececec; padding-bottom: 3rem; }
+.g12-ibwp__image,
+.g12-ibwp__icon { margin-bottom: 1rem; overflow: hidden; }
+.g12-ibwp__image img { display: block; width: 90%; height: 280px; object-fit: cover; }
+.g12-ibwp__icon img { display: block; max-width: 180px; width: auto; height: auto; }
+.g12-ibwp__card-title { margin: 0 0 1rem; font-size: 1.4rem; font-weight: 300; letter-spacing: -.03em; line-height: 1; }
+.g12-ibwp__card-title b,
+.g12-ibwp__popup-title b { color: #d6a456; }
+.g12-ibwp__excerpt { margin-bottom: 1rem; font-size: .875rem; font-weight: 400; letter-spacing: -.005em; line-height: 1.5; }
+.g12-ibwp__button { appearance: none; border: 0; background: linear-gradient(42deg, #d6a456 0%, #ab8134 70%); color: #fff; cursor: pointer; display: inline-block; font: inherit; font-size: .8rem; font-weight: 500; padding: 8px 12px; border-radius: 8px; transition: background .3s ease, transform .3s ease; }
+.g12-ibwp__button:hover,
+.g12-ibwp__button:focus-visible { background: linear-gradient(42deg, #ab8134 0%, #d6a456 70%); }
+.g12-ibwp__popup[hidden] { display: none; }
+.g12-ibwp__popup { position: fixed; inset: 0; z-index: 100000; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(0, 0, 0, .7); opacity: 0; transition: opacity .3s ease; }
+.g12-ibwp__popup.is-active { opacity: 1; }
+.g12-ibwp__popup-dialog { position: relative; width: 90%; max-width: 800px; max-height: 90vh; overflow-y: auto; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, .2); text-align: center; transform: translateY(-20px); opacity: 0; transition: transform .3s ease, opacity .3s ease; }
+.g12-ibwp__popup.is-active .g12-ibwp__popup-dialog { transform: translateY(0); opacity: 1; }
+.g12-ibwp__close { position: absolute; z-index: 2; right: 14px; top: 8px; border: 0; background: transparent; color: #000000; cursor: pointer; font-size: 32px; line-height: 1; transition: transform .2s ease; }
+.g12-ibwp__close:hover,
+.g12-ibwp__close:focus-visible { transform: rotate(90deg); }
+.g12-ibwp__popup-image img { display: block; max-width: 100%; width: 60%; height: auto; margin: 0 auto 20px; border-radius: 20px; }
+.g12-ibwp__popup-title { margin: 0 0 1rem; font-size: 1.4rem; font-weight: 300; letter-spacing: -.03em; line-height: 1; }
+.g12-ibwp__popup-text { font-size: 1rem; font-weight: 400; letter-spacing: -.005em; line-height: 1.5; }
+@media (max-width: 1023px) {
+	.g12-ibwp__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3rem; }
+}
+@media (max-width: 599px) {
+.g12-ibwp__popup-image img { width: 100%; }
+	.g12-ibwp__grid { grid-template-columns: 1fr; column-gap: 1.25rem; row-gap: 2rem; }
+	.g12-ibwp__card { border-bottom: 0; padding-bottom: 0; }
+	.g12-ibwp__image img { width: 100%; }
+	.g12-ibwp__popup-dialog { text-align: left; }
+	.g12-ibwp__popup-text { font-size: .8rem; }
+}

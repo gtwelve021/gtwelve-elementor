@@ -1,0 +1,50 @@
+.g12-feature-benefits {
+	width: 100%;
+	overflow: hidden;
+}
+
+.g12-feature-benefits,
+.g12-feature-benefits *,
+.g12-feature-benefits *::before,
+.g12-feature-benefits *::after {
+	box-sizing: border-box;
+}
+
+.g12-feature-benefits__item {
+	height: auto;
+	min-width: 0;
+	text-align: center;
+}
+
+.g12-feature-benefits__pagination {
+	position: static;
+	line-height: 1;
+}
+
+.g12-feature-benefits__image-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.g12-feature-benefits__image {
+	display: block;
+	width: 52px;
+	height: 52px;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.g12-feature-benefits__title {
+	margin: 0 0 14px;
+	padding: 0;
+	color: #ffffff;
+}
+
+.g12-feature-benefits__description {
+	max-width: 340px;
+	margin: 0 auto;
+	padding: 0;
+	color: #ffffff;
+}
