@@ -231,6 +231,7 @@ final class Plugin {
 		);
 
 		wp_register_style( 'gtwelve-elementor-site-header', GTWELVE_ELEMENTOR_URL . 'assets/css/site-header.css', array(), GTWELVE_ELEMENTOR_VERSION );
+		wp_register_style( 'gtwelve-elementor-mega-header', GTWELVE_ELEMENTOR_URL . 'assets/mega-header/css/header.css', array(), GTWELVE_ELEMENTOR_VERSION );
 
 	}
 
@@ -316,6 +317,7 @@ final class Plugin {
 		);
 
 		wp_register_script( 'gtwelve-elementor-site-header', GTWELVE_ELEMENTOR_URL . 'assets/js/site-header.js', array(), GTWELVE_ELEMENTOR_VERSION, true );
+		wp_register_script( 'gtwelve-elementor-mega-header', GTWELVE_ELEMENTOR_URL . 'assets/mega-header/js/header.js', array( 'jquery', 'elementor-frontend' ), GTWELVE_ELEMENTOR_VERSION, true );
 
 	}
 
@@ -349,6 +351,7 @@ final class Plugin {
 		require_once GTWELVE_ELEMENTOR_PATH . 'widgets/class-partner-logo-carousel.php';
 		require_once GTWELVE_ELEMENTOR_PATH . 'widgets/class-home-v2-hero.php';
 		require_once GTWELVE_ELEMENTOR_PATH . 'widgets/class-site-header.php';
+		require_once GTWELVE_ELEMENTOR_PATH . 'widgets/class-mega-header.php';
 
 		$widgets_manager->register( new Widgets\Interactive_Tile_Carousel() );
 		$widgets_manager->register( new Widgets\Expandable_Content() );
@@ -379,5 +382,6 @@ final class Plugin {
 		$widgets_manager->register( new Widgets\Partner_Logo_Carousel() );
 		$widgets_manager->register( new Widgets\Home_V2_Hero() );
 		$widgets_manager->register( new Widgets\Site_Header() );
+		$widgets_manager->register( new Widgets\Mega_Header() );
 	}
 }

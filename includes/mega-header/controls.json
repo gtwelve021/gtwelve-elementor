@@ -1,0 +1,1840 @@
+[
+  {
+    "key": "field_0",
+    "kind": "text",
+    "default": "AI Cost Calculator",
+    "label": "AI Cost Calculator",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_1",
+    "kind": "text",
+    "default": "Business Setup Guide",
+    "label": "Business Setup Guide",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_2",
+    "kind": "text",
+    "default": "Refer & Earn",
+    "label": "Refer & Earn",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_3",
+    "kind": "text",
+    "default": "Menu",
+    "label": "Menu",
+    "section": "Brand and Actions"
+  },
+  {
+    "key": "field_4",
+    "kind": "text",
+    "default": "Close Menu",
+    "label": "Close Menu",
+    "section": "Brand and Actions"
+  },
+  {
+    "key": "field_5",
+    "kind": "text",
+    "default": "Business Setup",
+    "label": "Business Setup",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_6",
+    "kind": "text",
+    "default": "Free Zone Business Setup",
+    "label": "Free Zone Business Setup",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_7",
+    "kind": "text",
+    "default": "Mainland Business Setup",
+    "label": "Mainland Business Setup",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_8",
+    "kind": "text",
+    "default": "Business Setup in Dubai",
+    "label": "Business Setup in Dubai",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_9",
+    "kind": "text",
+    "default": "Business Setup in Ajman",
+    "label": "Business Setup in Ajman",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_10",
+    "kind": "text",
+    "default": "Business Setup in Sharjah",
+    "label": "Business Setup in Sharjah",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_11",
+    "kind": "text",
+    "default": "Business Setup in Fujairah",
+    "label": "Business Setup in Fujairah",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_12",
+    "kind": "text",
+    "default": "Business Setup in Ras Al Khaimah",
+    "label": "Business Setup in Ras Al Khaimah",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_13",
+    "kind": "text",
+    "default": "Business Setup in DMCC",
+    "label": "Business Setup in DMCC",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_14",
+    "kind": "text",
+    "default": "Business Setup in DIFC",
+    "label": "Business Setup in DIFC",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_15",
+    "kind": "text",
+    "default": "Business Setup in Dafza",
+    "label": "Business Setup in Dafza",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_16",
+    "kind": "text",
+    "default": "Business Setup in Meydan",
+    "label": "Business Setup in Meydan",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_17",
+    "kind": "text",
+    "default": "Business Setup in Jafza",
+    "label": "Business Setup in Jafza",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_18",
+    "kind": "text",
+    "default": "Business Setup in IFZA",
+    "label": "Business Setup in IFZA",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_19",
+    "kind": "text",
+    "default": "Business Setup in DKP",
+    "label": "Business Setup in DKP",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_20",
+    "kind": "text",
+    "default": "Business Setup in Ajman",
+    "label": "Business Setup in Ajman",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_21",
+    "kind": "text",
+    "default": "Business Setup in Ajman NuVentures Centre",
+    "label": "Business Setup in Ajman NuVentures Centre",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_22",
+    "kind": "text",
+    "default": "Business Setup in Shams",
+    "label": "Business Setup in Shams",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_23",
+    "kind": "text",
+    "default": "Business Setup in SRTIP",
+    "label": "Business Setup in SRTIP",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_24",
+    "kind": "text",
+    "default": "Business Setup in SPC",
+    "label": "Business Setup in SPC",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_25",
+    "kind": "text",
+    "default": "Business Setup in Creative City",
+    "label": "Business Setup in Creative City",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_26",
+    "kind": "text",
+    "default": "Business Setup in RAK",
+    "label": "Business Setup in RAK",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_27",
+    "kind": "text",
+    "default": "Business Setup in RAKEZ",
+    "label": "Business Setup in RAKEZ",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_28",
+    "kind": "text",
+    "default": "Business Setup in Mainland",
+    "label": "Business Setup in Mainland",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_29",
+    "kind": "text",
+    "default": "Business Setup in ABU DHABI",
+    "label": "Business Setup in ABU DHABI",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_30",
+    "kind": "text",
+    "default": "Business Setup in AJMAN",
+    "label": "Business Setup in AJMAN",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_31",
+    "kind": "text",
+    "default": "Business Setup in DUBAI",
+    "label": "Business Setup in DUBAI",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_32",
+    "kind": "text",
+    "default": "Business Setup in SHARJAH",
+    "label": "Business Setup in SHARJAH",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_33",
+    "kind": "text",
+    "default": "Financial Services",
+    "label": "Financial Services",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_34",
+    "kind": "text",
+    "default": "VAT",
+    "label": "VAT",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_35",
+    "kind": "text",
+    "default": "VAT Consultancy & Advisory",
+    "label": "VAT Consultancy & Advisory",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_36",
+    "kind": "text",
+    "default": "VAT Registration",
+    "label": "VAT Registration",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_37",
+    "kind": "text",
+    "default": "VAT Compliance Audit",
+    "label": "VAT Compliance Audit",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_38",
+    "kind": "text",
+    "default": "VAT Refund Services",
+    "label": "VAT Refund Services",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_39",
+    "kind": "text",
+    "default": "VAT Return Filing",
+    "label": "VAT Return Filing",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_40",
+    "kind": "text",
+    "default": "Audit",
+    "label": "Audit",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_41",
+    "kind": "text",
+    "default": "Audit & Assurance",
+    "label": "Audit & Assurance",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_42",
+    "kind": "text",
+    "default": "Internal Audit",
+    "label": "Internal Audit",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_43",
+    "kind": "text",
+    "default": "External Audit",
+    "label": "External Audit",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_44",
+    "kind": "text",
+    "default": "FTA Tax Audit Representation",
+    "label": "FTA Tax Audit Representation",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_45",
+    "kind": "text",
+    "default": "Corporate Tax",
+    "label": "Corporate Tax",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_46",
+    "kind": "text",
+    "default": "Corporate Tax Guidance",
+    "label": "Corporate Tax Guidance",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_47",
+    "kind": "text",
+    "default": "Tax & Accounting Services",
+    "label": "Tax & Accounting Services",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_48",
+    "kind": "text",
+    "default": "Direct Tax Consultancy",
+    "label": "Direct Tax Consultancy",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_49",
+    "kind": "text",
+    "default": "Corporate Tax Compliance",
+    "label": "Corporate Tax Compliance",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_50",
+    "kind": "text",
+    "default": "International Tax",
+    "label": "International Tax",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_51",
+    "kind": "text",
+    "default": "Transfer Pricing Advisory",
+    "label": "Transfer Pricing Advisory",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_52",
+    "kind": "text",
+    "default": "Master File Maintenance",
+    "label": "Master File Maintenance",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_53",
+    "kind": "text",
+    "default": "Double Taxation (DTAA) Relief",
+    "label": "Double Taxation (DTAA) Relief",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_54",
+    "kind": "text",
+    "default": "Foreign Tax Credit Advisory",
+    "label": "Foreign Tax Credit Advisory",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_55",
+    "kind": "text",
+    "default": "Customs",
+    "label": "Customs",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_56",
+    "kind": "text",
+    "default": "Customs Audit & Duty Optimization",
+    "label": "Customs Audit & Duty Optimization",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_57",
+    "kind": "text",
+    "default": "Customs Registration & Import Code",
+    "label": "Customs Registration & Import Code",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_58",
+    "kind": "text",
+    "default": "Customs Health Check",
+    "label": "Customs Health Check",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_59",
+    "kind": "text",
+    "default": "Customs Refund & Duty Recovery",
+    "label": "Customs Refund & Duty Recovery",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_60",
+    "kind": "text",
+    "default": "Customs Exemption & Duty Relief",
+    "label": "Customs Exemption & Duty Relief",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_61",
+    "kind": "text",
+    "default": "Compliance",
+    "label": "Compliance",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_62",
+    "kind": "text",
+    "default": "Corporate Compliance & Governance",
+    "label": "Corporate Compliance & Governance",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_63",
+    "kind": "text",
+    "default": "AML Compliance Advisory",
+    "label": "AML Compliance Advisory",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_64",
+    "kind": "text",
+    "default": "UBO Declarations",
+    "label": "UBO Declarations",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_65",
+    "kind": "text",
+    "default": "Business Structuring",
+    "label": "Business Structuring",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_66",
+    "kind": "text",
+    "default": "Global Mobility Services",
+    "label": "Global Mobility Services",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_67",
+    "kind": "text",
+    "default": "Family Trust & Wealth Structuring",
+    "label": "Family Trust & Wealth Structuring",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_68",
+    "kind": "text",
+    "default": "Trademark Registration",
+    "label": "Trademark Registration",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_69",
+    "kind": "text",
+    "default": "Real Estate",
+    "label": "Real Estate",
+    "section": "Real Estate"
+  },
+  {
+    "key": "field_70",
+    "kind": "text",
+    "default": "G12 DIGITAL",
+    "label": "G12 DIGITAL",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_71",
+    "kind": "text",
+    "default": "Website Design & Development",
+    "label": "Website Design & Development",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_72",
+    "kind": "text",
+    "default": "Graphic Design",
+    "label": "Graphic Design",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_73",
+    "kind": "text",
+    "default": "SEO Services",
+    "label": "SEO Services",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_74",
+    "kind": "text",
+    "default": "Digital Marketing",
+    "label": "Digital Marketing",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_75",
+    "kind": "text",
+    "default": "Content Writing",
+    "label": "Content Writing",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_76",
+    "kind": "text",
+    "default": "Social Media Marketing",
+    "label": "Social Media Marketing",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_77",
+    "kind": "text",
+    "default": "CRM Solutions",
+    "label": "CRM Solutions",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_78",
+    "kind": "text",
+    "default": "G12 ECOSYSTEM",
+    "label": "G12 ECOSYSTEM",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_79",
+    "kind": "text",
+    "default": "Business Growth",
+    "label": "Business Growth",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_80",
+    "kind": "text",
+    "default": "Bank Account Opening",
+    "label": "Bank Account Opening",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_81",
+    "kind": "text",
+    "default": "UAE Corporate Tax",
+    "label": "UAE Corporate Tax",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_82",
+    "kind": "text",
+    "default": "PRO Services in UAE",
+    "label": "PRO Services in UAE",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_83",
+    "kind": "text",
+    "default": "Trademark & Copyright",
+    "label": "Trademark & Copyright",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_84",
+    "kind": "text",
+    "default": "UAE Golden Visa",
+    "label": "UAE Golden Visa",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_85",
+    "kind": "text",
+    "default": "ISO Certification",
+    "label": "ISO Certification",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_86",
+    "kind": "text",
+    "default": "Knowledge Center",
+    "label": "Knowledge Center",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_87",
+    "kind": "text",
+    "default": "About G12",
+    "label": "About G12",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_88",
+    "kind": "text",
+    "default": "Why Dubai",
+    "label": "Why Dubai",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_89",
+    "kind": "text",
+    "default": "Blog Posts",
+    "label": "Blog Posts",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_90",
+    "kind": "text",
+    "default": "Contact",
+    "label": "Contact",
+    "section": "Contact"
+  },
+  {
+    "key": "field_91",
+    "kind": "text",
+    "default": "+971 4 570 6451",
+    "label": "+971 4 570 6451",
+    "section": "Brand and Actions"
+  },
+  {
+    "key": "field_92",
+    "kind": "url",
+    "default": {
+      "url": "https://aiquote.g12.ae/",
+      "is_external": true
+    },
+    "label": "AI Cost Calculator \u2014 Link",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_93",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-guide/",
+      "is_external": true
+    },
+    "label": "Business Setup Guide \u2014 Link",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_94",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/referral/",
+      "is_external": true
+    },
+    "label": "Refer & Earn \u2014 Link",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_95",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae",
+      "is_external": false
+    },
+    "label": "G12 Home \u2014 Link",
+    "section": "Brand and Actions"
+  },
+  {
+    "key": "field_96",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae",
+      "is_external": false
+    },
+    "label": "G12 Home \u2014 Link",
+    "section": "Brand and Actions"
+  },
+  {
+    "key": "field_97",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-uae/",
+      "is_external": false
+    },
+    "label": "Business Setup \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_98",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-dubai/",
+      "is_external": false
+    },
+    "label": "Business Setup in Dubai \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_99",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-ajman/",
+      "is_external": false
+    },
+    "label": "Business Setup in Ajman \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_100",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-sharjah/",
+      "is_external": false
+    },
+    "label": "Business Setup in Sharjah \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_101",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-fujairah-creative-city/",
+      "is_external": false
+    },
+    "label": "Business Setup in Fujairah \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_102",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-ras-al-khaimah/",
+      "is_external": false
+    },
+    "label": "Business Setup in Ras Al Khaimah \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_103",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-dmcc-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in DMCC \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_104",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-difc-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in DIFC \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_105",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-dafza-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in Dafza \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_106",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-meydan-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in Meydan \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_107",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-jafza-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in Jafza \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_108",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-ifza-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in IFZA \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_109",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-dkp-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in DKP \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_110",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-ajman-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in Ajman \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_111",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-anc-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in Ajman NuVentures Centre \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_112",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-shams-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in Shams \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_113",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-srtip-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in SRTIP \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_114",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-spc-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in SPC \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_115",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-fujairah-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in Creative City \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_116",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-rak-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in RAK \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_117",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-rakez-free-zone/",
+      "is_external": false
+    },
+    "label": "Business Setup in RAKEZ \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_118",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-abu-dhabi-mainland/",
+      "is_external": false
+    },
+    "label": "Business Setup in ABU DHABI \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_119",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-ajman-mainland/",
+      "is_external": false
+    },
+    "label": "Business Setup in AJMAN \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_120",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-dubai-mainland/",
+      "is_external": false
+    },
+    "label": "Business Setup in DUBAI \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_121",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-setup-in-sharjah-mainland/",
+      "is_external": false
+    },
+    "label": "Business Setup in SHARJAH \u2014 Link",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_122",
+    "kind": "url",
+    "default": {
+      "url": "#",
+      "is_external": false
+    },
+    "label": "Financial Services \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_123",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/expert-vat-consultancy-and-advisory-in-the-uae/",
+      "is_external": false
+    },
+    "label": "VAT Consultancy & Advisory \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_124",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/vat-registration-services-in-dubai-uae-secure-your-tax-compliance/",
+      "is_external": false
+    },
+    "label": "VAT Registration \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_125",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/vat-compliance-audit-services-in-dubai-uae/",
+      "is_external": false
+    },
+    "label": "VAT Compliance Audit \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_126",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/vat-refund-services-in-dubai-uae-maximize-returns-with-compliance-experts/",
+      "is_external": false
+    },
+    "label": "VAT Refund Services \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_127",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/vat-return-filing-services-in-the-uae/",
+      "is_external": false
+    },
+    "label": "VAT Return Filing \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_128",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/audit-and-assurance-services-in-dubai/",
+      "is_external": false
+    },
+    "label": "Audit & Assurance \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_129",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/internal-audit-services-in-dubai-uae/",
+      "is_external": false
+    },
+    "label": "Internal Audit \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_130",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/external-audit-services-in-dubai-uae/",
+      "is_external": false
+    },
+    "label": "External Audit \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_131",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/fta-tax-audit-services-representation/",
+      "is_external": false
+    },
+    "label": "FTA Tax Audit Representation \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_132",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/corporate-tax-expert-guidance-uae/",
+      "is_external": false
+    },
+    "label": "Corporate Tax Guidance \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_133",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/tax-and-accounting-services-in-uae/",
+      "is_external": false
+    },
+    "label": "Tax & Accounting Services \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_134",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/direct-tax-consultancy-strategic-financial-planning/",
+      "is_external": false
+    },
+    "label": "Direct Tax Consultancy \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_135",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/uae-corporate-tax-services-strategic-compliance-advisory/",
+      "is_external": false
+    },
+    "label": "Corporate Tax Compliance \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_136",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/international-gcc-taxation-transfer-pricing-tax-advisory-dubai/",
+      "is_external": false
+    },
+    "label": "Transfer Pricing Advisory \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_137",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/master-file-maintenance-mne-transfer-pricing-documentation/",
+      "is_external": false
+    },
+    "label": "Master File Maintenance \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_138",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/double-taxation-advisory-dtaa-cross-border-tax-relief/",
+      "is_external": false
+    },
+    "label": "Double Taxation (DTAA) Relief \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_139",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/foreign-tax-credit-advisory-in-the-uae/",
+      "is_external": false
+    },
+    "label": "Foreign Tax Credit Advisory \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_140",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/customs-audit-gcc-customs-compliance-duty-optimization-services/",
+      "is_external": false
+    },
+    "label": "Customs Audit & Duty Optimization \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_141",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/customs-registration-import-code-issuance-uae/",
+      "is_external": false
+    },
+    "label": "Customs Registration & Import Code \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_142",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/customs-health-check-pre-audit-compliance-reviews-uae/",
+      "is_external": false
+    },
+    "label": "Customs Health Check \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_143",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/custom-refund-assistance-duty-recovery/",
+      "is_external": false
+    },
+    "label": "Customs Refund & Duty Recovery \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_144",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/uae-customs-exemption-advisory-duty-relief-services",
+      "is_external": false
+    },
+    "label": "Customs Exemption & Duty Relief \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_145",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/uae-corporate-compliance-regulatory-governance",
+      "is_external": false
+    },
+    "label": "Corporate Compliance & Governance \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_146",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/aml-compliance-services-regulatory-advisory-dubai-uae/",
+      "is_external": false
+    },
+    "label": "AML Compliance Advisory \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_147",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/ultimate-beneficial-ownership-ubo-declaration-services-in-dubai-uae/",
+      "is_external": false
+    },
+    "label": "UBO Declarations \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_148",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/business-structuring-services-in-dubai-uae/",
+      "is_external": false
+    },
+    "label": "Business Structuring \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_149",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/global-mobility-services-in-uae/",
+      "is_external": false
+    },
+    "label": "Global Mobility Services \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_150",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/family-trust-setup-wealth-structuring-advisory/",
+      "is_external": false
+    },
+    "label": "Family Trust & Wealth Structuring \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_151",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/trademark-registration-services-in-dubai-uae/",
+      "is_external": false
+    },
+    "label": "Trademark Registration \u2014 Link",
+    "section": "Financial Services"
+  },
+  {
+    "key": "field_152",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/real-estate/",
+      "is_external": false
+    },
+    "label": "Real Estate \u2014 Link",
+    "section": "Real Estate"
+  },
+  {
+    "key": "field_153",
+    "kind": "url",
+    "default": {
+      "url": "https://g12digital.ae/",
+      "is_external": true
+    },
+    "label": "G12 DIGITAL \u2014 Link",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_154",
+    "kind": "url",
+    "default": {
+      "url": "https://g12digital.ae/web/",
+      "is_external": true
+    },
+    "label": "Website Design & Development \u2014 Link",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_155",
+    "kind": "url",
+    "default": {
+      "url": "https://g12digital.ae/graphic-design/",
+      "is_external": true
+    },
+    "label": "Graphic Design \u2014 Link",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_156",
+    "kind": "url",
+    "default": {
+      "url": "https://g12digital.ae/seo/",
+      "is_external": true
+    },
+    "label": "SEO Services \u2014 Link",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_157",
+    "kind": "url",
+    "default": {
+      "url": "https://g12digital.ae/digital-marketing/",
+      "is_external": true
+    },
+    "label": "Digital Marketing \u2014 Link",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_158",
+    "kind": "url",
+    "default": {
+      "url": "https://g12digital.ae/content-writing/",
+      "is_external": true
+    },
+    "label": "Content Writing \u2014 Link",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_159",
+    "kind": "url",
+    "default": {
+      "url": "https://g12digital.ae/social/",
+      "is_external": true
+    },
+    "label": "Social Media Marketing \u2014 Link",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_160",
+    "kind": "url",
+    "default": {
+      "url": "https://g12digital.ae/enterprise-resource-planning/",
+      "is_external": true
+    },
+    "label": "CRM Solutions \u2014 Link",
+    "section": "G12 DIGITAL"
+  },
+  {
+    "key": "field_161",
+    "kind": "url",
+    "default": {
+      "url": "#ecosystem",
+      "is_external": false
+    },
+    "label": "G12 ECOSYSTEM \u2014 Link",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_162",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/bank-accounts-uae/",
+      "is_external": false
+    },
+    "label": "Bank Account Opening \u2014 Link",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_163",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/corporate-tax-expert-guidance-uae/",
+      "is_external": false
+    },
+    "label": "UAE Corporate Tax \u2014 Link",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_164",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/focus-on-growth-we-handle-the-paperwork/",
+      "is_external": false
+    },
+    "label": "PRO Services in UAE \u2014 Link",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_165",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/brand-and-intellectual-property/",
+      "is_external": false
+    },
+    "label": "Trademark & Copyright \u2014 Link",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_166",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/golden-visa/",
+      "is_external": false
+    },
+    "label": "UAE Golden Visa \u2014 Link",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_167",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/iso-certification-services-in-the-uae/",
+      "is_external": false
+    },
+    "label": "ISO Certification \u2014 Link",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_168",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/about-us/",
+      "is_external": false
+    },
+    "label": "About G12 \u2014 Link",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_169",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/why-dubai/",
+      "is_external": false
+    },
+    "label": "Why Dubai \u2014 Link",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_170",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/blog/",
+      "is_external": false
+    },
+    "label": "Blog Posts \u2014 Link",
+    "section": "G12 ECOSYSTEM"
+  },
+  {
+    "key": "field_171",
+    "kind": "url",
+    "default": {
+      "url": "https://g12.ae/contact/",
+      "is_external": false
+    },
+    "label": "Contact \u2014 Link",
+    "section": "Contact"
+  },
+  {
+    "key": "field_172",
+    "kind": "url",
+    "default": {
+      "url": "tel:+97145706451",
+      "is_external": false
+    },
+    "label": "Call +971 4 570 6451 \u2014 Link",
+    "section": "Brand and Actions"
+  },
+  {
+    "key": "field_173",
+    "kind": "media",
+    "default": {
+      "url": "images/ai-cal.webp"
+    },
+    "label": "ai-cal \u2014 Image",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_174",
+    "kind": "text",
+    "default": "",
+    "label": "ai-cal \u2014 Alt Text",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_175",
+    "kind": "media",
+    "default": {
+      "url": "images/dow.webp"
+    },
+    "label": "dow \u2014 Image",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_176",
+    "kind": "text",
+    "default": "",
+    "label": "dow \u2014 Alt Text",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_177",
+    "kind": "media",
+    "default": {
+      "url": "images/d.webp"
+    },
+    "label": "d \u2014 Image",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_178",
+    "kind": "text",
+    "default": "",
+    "label": "d \u2014 Alt Text",
+    "section": "Top Bar"
+  },
+  {
+    "key": "field_179",
+    "kind": "media",
+    "default": {
+      "url": "images/G12-Final-Logo-Update-01.svg"
+    },
+    "label": "G12-Final-Logo-Update-01 \u2014 Image",
+    "section": "Brand and Actions"
+  },
+  {
+    "key": "field_180",
+    "kind": "text",
+    "default": "g12",
+    "label": "G12-Final-Logo-Update-01 \u2014 Alt Text",
+    "section": "Brand and Actions"
+  },
+  {
+    "key": "field_181",
+    "kind": "media",
+    "default": {
+      "url": "images/G12-Final-Logo-Update-01.svg"
+    },
+    "label": "G12-Final-Logo-Update-01 \u2014 Image",
+    "section": "Brand and Actions"
+  },
+  {
+    "key": "field_182",
+    "kind": "text",
+    "default": "g12",
+    "label": "G12-Final-Logo-Update-01 \u2014 Alt Text",
+    "section": "Brand and Actions"
+  },
+  {
+    "key": "field_183",
+    "kind": "media",
+    "default": {
+      "url": "images/DMCC.webp"
+    },
+    "label": "DMCC \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_184",
+    "kind": "text",
+    "default": "",
+    "label": "DMCC \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_185",
+    "kind": "media",
+    "default": {
+      "url": "images/DIFC.webp"
+    },
+    "label": "DIFC \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_186",
+    "kind": "text",
+    "default": "",
+    "label": "DIFC \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_187",
+    "kind": "media",
+    "default": {
+      "url": "images/Dafza.webp"
+    },
+    "label": "Dafza \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_188",
+    "kind": "text",
+    "default": "",
+    "label": "Dafza \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_189",
+    "kind": "media",
+    "default": {
+      "url": "images/Meydan.webp"
+    },
+    "label": "Meydan \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_190",
+    "kind": "text",
+    "default": "",
+    "label": "Meydan \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_191",
+    "kind": "media",
+    "default": {
+      "url": "images/JAFZA.webp"
+    },
+    "label": "JAFZA \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_192",
+    "kind": "text",
+    "default": "",
+    "label": "JAFZA \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_193",
+    "kind": "media",
+    "default": {
+      "url": "images/IFZA.webp"
+    },
+    "label": "IFZA \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_194",
+    "kind": "text",
+    "default": "",
+    "label": "IFZA \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_195",
+    "kind": "media",
+    "default": {
+      "url": "images/DKP.webp"
+    },
+    "label": "DKP \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_196",
+    "kind": "text",
+    "default": "",
+    "label": "DKP \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_197",
+    "kind": "media",
+    "default": {
+      "url": "images/ajman-1.webp"
+    },
+    "label": "ajman-1 \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_198",
+    "kind": "text",
+    "default": "",
+    "label": "ajman-1 \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_199",
+    "kind": "media",
+    "default": {
+      "url": "images/anc.png"
+    },
+    "label": "anc \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_200",
+    "kind": "text",
+    "default": "",
+    "label": "anc \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_201",
+    "kind": "media",
+    "default": {
+      "url": "images/Sharjah-Media-City.webp"
+    },
+    "label": "Sharjah-Media-City \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_202",
+    "kind": "text",
+    "default": "",
+    "label": "Sharjah-Media-City \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_203",
+    "kind": "media",
+    "default": {
+      "url": "images/SRTIP-1.webp"
+    },
+    "label": "SRTIP-1 \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_204",
+    "kind": "text",
+    "default": "",
+    "label": "SRTIP-1 \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_205",
+    "kind": "media",
+    "default": {
+      "url": "images/SPC-.webp"
+    },
+    "label": "SPC- \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_206",
+    "kind": "text",
+    "default": "",
+    "label": "SPC- \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_207",
+    "kind": "media",
+    "default": {
+      "url": "images/Creative-City.webp"
+    },
+    "label": "Creative-City \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_208",
+    "kind": "text",
+    "default": "",
+    "label": "Creative-City \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_209",
+    "kind": "media",
+    "default": {
+      "url": "images/RAK-1.webp"
+    },
+    "label": "RAK-1 \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_210",
+    "kind": "text",
+    "default": "",
+    "label": "RAK-1 \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_211",
+    "kind": "media",
+    "default": {
+      "url": "images/Rakez-.webp"
+    },
+    "label": "Rakez- \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_212",
+    "kind": "text",
+    "default": "",
+    "label": "Rakez- \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_213",
+    "kind": "media",
+    "default": {
+      "url": "images/Abu-dhabi-1.webp"
+    },
+    "label": "Abu-dhabi-1 \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_214",
+    "kind": "text",
+    "default": "",
+    "label": "Abu-dhabi-1 \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_215",
+    "kind": "media",
+    "default": {
+      "url": "images/Ajman-2.webp"
+    },
+    "label": "Ajman-2 \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_216",
+    "kind": "text",
+    "default": "",
+    "label": "Ajman-2 \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_217",
+    "kind": "media",
+    "default": {
+      "url": "images/Dubai-Mainland.webp"
+    },
+    "label": "Dubai-Mainland \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_218",
+    "kind": "text",
+    "default": "",
+    "label": "Dubai-Mainland \u2014 Alt Text",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_219",
+    "kind": "media",
+    "default": {
+      "url": "images/Sharjah.webp"
+    },
+    "label": "Sharjah \u2014 Image",
+    "section": "Business Setup"
+  },
+  {
+    "key": "field_220",
+    "kind": "text",
+    "default": "",
+    "label": "Sharjah \u2014 Alt Text",
+    "section": "Business Setup"
+  }
+]
