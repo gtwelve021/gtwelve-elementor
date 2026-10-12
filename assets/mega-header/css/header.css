@@ -981,16 +981,16 @@ body.g12-mega-scroll-locked {
 .g12-header .g12-business-menu .g12-tab.is-active::after {
     content: "\2212 ";
   }
-.g12-header .g12-business-menu .g12-tab:nth-child(1) {
+.g12-header .g12-business-menu .g12-tab[data-tab$="-business-setup"] {
     grid-row: 1;
   }
-.g12-header .g12-business-menu #business-setup {
+.g12-header .g12-business-menu [id$="-business-setup"] {
     grid-row: 2;
   }
-.g12-header .g12-business-menu .g12-tab:nth-child(2) {
+.g12-header .g12-business-menu .g12-tab[data-tab$="-mainland-setup"] {
     grid-row: 3;
   }
-.g12-header .g12-business-menu #mainland-setup {
+.g12-header .g12-business-menu [id$="-mainland-setup"] {
     grid-row: 4;
   }
 .g12-header .g12-business-menu .g12-mega__content {
