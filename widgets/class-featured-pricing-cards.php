@@ -859,7 +859,7 @@ class Featured_Pricing_Cards extends Widget_Base {
                         <?php endif; ?>
                         <header class="gtwelve-featured-pricing-card__header">
                             <?php if ( ! empty( $plan['plan_title'] ) ) : ?>
-                                <h3 class="gtwelve-featured-pricing-card__title"><?php echo esc_html( $plan['plan_title'] ); ?></h3>
+                                <h3 class="gtwelve-featured-pricing-card__title"><?php echo wp_kses( $plan['plan_title'], [ 'br' => [] ] ); ?></h3>
                             <?php endif; ?>
                             <?php if ( ! empty( $plan['plan_subtitle'] ) ) : ?>
                                 <p class="gtwelve-featured-pricing-card__subtitle"><?php echo esc_html( $plan['plan_subtitle'] ); ?></p>

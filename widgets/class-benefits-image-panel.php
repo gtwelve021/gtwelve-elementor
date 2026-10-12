@@ -48,6 +48,11 @@ class Benefits_Image_Panel extends Widget_Base {
 	private function register_showcase_controls(): void {
 		$this->start_controls_section( 'showcase_section', array( 'label' => esc_html__( 'Benefits and Eligibility', 'gtwelve-elementor' ), 'tab' => Controls_Manager::TAB_CONTENT ) );
 
+		$this->add_control( 'heading', array( 'label' => esc_html__( 'Heading', 'gtwelve-elementor' ), 'type' => Controls_Manager::TEXTAREA, 'rows' => 3, 'label_block' => true, 'default' => '' ) );
+		$this->add_control( 'heading_tag', array( 'label' => esc_html__( 'Heading HTML Tag', 'gtwelve-elementor' ), 'type' => Controls_Manager::SELECT, 'default' => 'h2', 'options' => array( 'h1' => 'H1', 'h2' => 'H2', 'h3' => 'H3', 'h4' => 'H4', 'h5' => 'H5', 'h6' => 'H6', 'div' => 'div' ) ) );
+		$this->add_control( 'intro_content', array( 'label' => esc_html__( 'Intro Content', 'gtwelve-elementor' ), 'type' => Controls_Manager::WYSIWYG, 'default' => '' ) );
+		$this->add_control( 'content_divider', array( 'type' => Controls_Manager::DIVIDER ) );
+
 		$benefit = new Repeater();
 		$benefit->add_control( 'label', array( 'label' => esc_html__( 'Benefit', 'gtwelve-elementor' ), 'type' => Controls_Manager::TEXT, 'label_block' => true, 'default' => esc_html__( 'Long-term residency', 'gtwelve-elementor' ) ) );
 		$this->add_control(
@@ -83,9 +88,9 @@ class Benefits_Image_Panel extends Widget_Base {
 
 	private function register_layout_style_controls(): void {
 		$this->start_controls_section( 'layout_style', array( 'label' => esc_html__( 'Layout and Image', 'gtwelve-elementor' ), 'tab' => Controls_Manager::TAB_STYLE ) );
-		$this->add_responsive_control( 'max_width', array( 'label' => esc_html__( 'Maximum Width', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'size_units' => array( 'px', '%' ), 'range' => array( 'px' => array( 'min' => 700, 'max' => 1800 ), '%' => array( 'min' => 60, 'max' => 100 ) ), 'default' => array( 'size' => 1280, 'unit' => 'px' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel' => 'max-width: {{SIZE}}{{UNIT}};' ) ) );
-		$this->add_responsive_control( 'stage_min_height', array( 'label' => esc_html__( 'Showcase Minimum Height', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'range' => array( 'px' => array( 'min' => 400, 'max' => 1200 ) ), 'default' => array( 'size' => 820, 'unit' => 'px' ), 'tablet_default' => array( 'size' => 720, 'unit' => 'px' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__stage' => 'min-height: {{SIZE}}{{UNIT}};' ) ) );
-		$this->add_responsive_control( 'image_width', array( 'label' => esc_html__( 'Image Width', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'size_units' => array( '%', 'px' ), 'range' => array( '%' => array( 'min' => 30, 'max' => 90 ), 'px' => array( 'min' => 200, 'max' => 1000 ) ), 'default' => array( 'size' => 55, 'unit' => '%' ), 'mobile_default' => array( 'size' => 78, 'unit' => '%' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__visual' => 'width: {{SIZE}}{{UNIT}};' ) ) );
+		$this->add_responsive_control( 'max_width', array( 'label' => esc_html__( 'Maximum Width', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'size_units' => array( 'px', '%' ), 'range' => array( 'px' => array( 'min' => 700, 'max' => 1800 ), '%' => array( 'min' => 60, 'max' => 100 ) ), 'default' => array( 'size' => 100, 'unit' => '%' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel' => 'max-width: {{SIZE}}{{UNIT}};' ) ) );
+		$this->add_responsive_control( 'stage_min_height', array( 'label' => esc_html__( 'Showcase Minimum Height', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'range' => array( 'px' => array( 'min' => 0, 'max' => 1200 ) ), 'default' => array( 'size' => 0, 'unit' => 'px' ), 'tablet_default' => array( 'size' => 0, 'unit' => 'px' ), 'mobile_default' => array( 'size' => 0, 'unit' => 'px' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__stage' => 'min-height: {{SIZE}}{{UNIT}};' ) ) );
+		$this->add_responsive_control( 'image_width', array( 'label' => esc_html__( 'Image Width', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'size_units' => array( '%', 'px' ), 'range' => array( '%' => array( 'min' => 30, 'max' => 90 ), 'px' => array( 'min' => 200, 'max' => 1000 ) ), 'default' => array( 'size' => 55, 'unit' => '%' ), 'mobile_default' => array( 'size' => 70, 'unit' => '%' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__visual--desktop' => 'width: {{SIZE}}{{UNIT}};', '{{WRAPPER}} .g12-benefits-panel__visual--mobile .g12-benefits-panel__image' => 'width: {{SIZE}}{{UNIT}};' ) ) );
 		$this->add_responsive_control( 'image_bottom_spacing', array( 'label' => esc_html__( 'Image Bottom Spacing', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'range' => array( 'px' => array( 'min' => 0, 'max' => 200 ) ), 'default' => array( 'size' => 0, 'unit' => 'px' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__visual' => 'bottom: {{SIZE}}{{UNIT}};' ) ) );
 		$this->end_controls_section();
 	}
@@ -97,8 +102,8 @@ class Benefits_Image_Panel extends Widget_Base {
 		$this->add_control( 'benefit_border_color', array( 'label' => esc_html__( 'Border Color', 'gtwelve-elementor' ), 'type' => Controls_Manager::COLOR, 'default' => '#d6a557', 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__benefit-label' => 'border-color: {{VALUE}};' ) ) );
 		$this->add_control( 'connector_color', array( 'label' => esc_html__( 'Connector Color', 'gtwelve-elementor' ), 'type' => Controls_Manager::COLOR, 'default' => '#bab7b7', 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__connector' => 'background: {{VALUE}};' ) ) );
 		$this->add_group_control( Group_Control_Typography::get_type(), array( 'name' => 'benefit_typography', 'selector' => '{{WRAPPER}} .g12-benefits-panel__benefit-label' ) );
-		$this->add_responsive_control( 'benefit_gap', array( 'label' => esc_html__( 'Vertical Gap', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'range' => array( 'px' => array( 'min' => 4, 'max' => 60 ) ), 'default' => array( 'size' => 20, 'unit' => 'px' ), 'mobile_default' => array( 'size' => 10, 'unit' => 'px' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__benefits' => 'gap: {{SIZE}}{{UNIT}};' ) ) );
-		$this->add_responsive_control( 'benefit_padding', array( 'label' => esc_html__( 'Label Padding', 'gtwelve-elementor' ), 'type' => Controls_Manager::DIMENSIONS, 'size_units' => array( 'px', 'em' ), 'default' => array( 'top' => 6, 'right' => 18, 'bottom' => 6, 'left' => 18, 'unit' => 'px', 'isLinked' => false ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__benefit-label' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};' ) ) );
+		$this->add_responsive_control( 'benefit_gap', array( 'label' => esc_html__( 'Vertical Gap', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'range' => array( 'px' => array( 'min' => 4, 'max' => 60 ) ), 'default' => array( 'size' => 16, 'unit' => 'px' ), 'mobile_default' => array( 'size' => 10, 'unit' => 'px' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__benefits' => 'gap: {{SIZE}}{{UNIT}};', '{{WRAPPER}} .g12-benefits-panel__benefit + .g12-benefits-panel__benefit' => 'margin-top: 0;' ) ) );
+		$this->add_responsive_control( 'benefit_padding', array( 'label' => esc_html__( 'Label Padding', 'gtwelve-elementor' ), 'type' => Controls_Manager::DIMENSIONS, 'size_units' => array( 'px', 'em' ), 'default' => array( 'top' => 6, 'right' => 16, 'bottom' => 6, 'left' => 16, 'unit' => 'px', 'isLinked' => false ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__benefit-label' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};' ) ) );
 		$this->end_controls_section();
 	}
 
@@ -110,8 +115,8 @@ class Benefits_Image_Panel extends Widget_Base {
 		$this->add_control( 'point_color', array( 'label' => esc_html__( 'Point Color', 'gtwelve-elementor' ), 'type' => Controls_Manager::COLOR, 'default' => '#bababa', 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__point' => 'color: {{VALUE}};' ) ) );
 		$this->add_control( 'star_color', array( 'label' => esc_html__( 'Star Color', 'gtwelve-elementor' ), 'type' => Controls_Manager::COLOR, 'default' => '#facc15', 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__star' => 'color: {{VALUE}};' ) ) );
 		$this->add_group_control( Group_Control_Typography::get_type(), array( 'name' => 'point_typography', 'selector' => '{{WRAPPER}} .g12-benefits-panel__point' ) );
-		$this->add_responsive_control( 'panel_width', array( 'label' => esc_html__( 'Panel Width', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'size_units' => array( '%', 'px' ), 'range' => array( '%' => array( 'min' => 40, 'max' => 100 ), 'px' => array( 'min' => 300, 'max' => 1200 ) ), 'default' => array( 'size' => 72, 'unit' => '%' ), 'mobile_default' => array( 'size' => 100, 'unit' => '%' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__eligibility' => 'width: {{SIZE}}{{UNIT}};' ) ) );
-		$this->add_responsive_control( 'panel_padding', array( 'label' => esc_html__( 'Padding', 'gtwelve-elementor' ), 'type' => Controls_Manager::DIMENSIONS, 'size_units' => array( 'px', 'em' ), 'default' => array( 'top' => 36, 'right' => 42, 'bottom' => 36, 'left' => 42, 'unit' => 'px', 'isLinked' => false ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__eligibility' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};' ) ) );
+		$this->add_responsive_control( 'panel_width', array( 'label' => esc_html__( 'Panel Width', 'gtwelve-elementor' ), 'type' => Controls_Manager::SLIDER, 'size_units' => array( '%', 'px' ), 'range' => array( '%' => array( 'min' => 40, 'max' => 100 ), 'px' => array( 'min' => 300, 'max' => 1200 ) ), 'default' => array( 'size' => 71, 'unit' => '%' ), 'mobile_default' => array( 'size' => 100, 'unit' => '%' ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__eligibility' => 'width: {{SIZE}}{{UNIT}};' ) ) );
+		$this->add_responsive_control( 'panel_padding', array( 'label' => esc_html__( 'Padding', 'gtwelve-elementor' ), 'type' => Controls_Manager::DIMENSIONS, 'size_units' => array( 'px', 'em' ), 'default' => array( 'top' => 32, 'right' => 32, 'bottom' => 32, 'left' => 32, 'unit' => 'px', 'isLinked' => false ), 'selectors' => array( '{{WRAPPER}} .g12-benefits-panel__eligibility' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};' ) ) );
 		$this->add_group_control( Group_Control_Border::get_type(), array( 'name' => 'panel_border', 'selector' => '{{WRAPPER}} .g12-benefits-panel__eligibility' ) );
 		$this->add_group_control( Group_Control_Box_Shadow::get_type(), array( 'name' => 'panel_shadow', 'selector' => '{{WRAPPER}} .g12-benefits-panel__eligibility' ) );
 		$this->end_controls_section();
@@ -136,36 +141,42 @@ class Benefits_Image_Panel extends Widget_Base {
 		?>
 
 		<div class="g12-benefits-panel">
+			<?php if ( ! empty( $settings['heading'] ) || ! empty( $settings['intro_content'] ) ) : ?>
+				<div class="g12-benefits-panel__editorial">
+					<?php
+					if ( ! empty( $settings['heading'] ) ) {
+						$allowed_heading_tags = array( 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'div' );
+						$heading_tag         = in_array( $settings['heading_tag'] ?? 'h2', $allowed_heading_tags, true ) ? $settings['heading_tag'] : 'h2';
+						printf( '<%1$s class="g12-benefits-panel__heading">%2$s</%1$s>', esc_attr( $heading_tag ), wp_kses_post( $settings['heading'] ) );
+					}
+					?>
+					<?php if ( ! empty( $settings['intro_content'] ) ) : ?><div class="g12-benefits-panel__intro"><?php echo wp_kses_post( $settings['intro_content'] ); ?></div><?php endif; ?>
+				</div>
+			<?php endif; ?>
 			<div class="g12-benefits-panel__stage">
-				<?php if ( ! empty( $benefits ) ) : ?>
-					<ul class="g12-benefits-panel__benefits">
-						<?php foreach ( $benefits as $benefit ) : ?>
-							<li class="g12-benefits-panel__benefit elementor-repeater-item-<?php echo esc_attr( $benefit['_id'] ?? '' ); ?>"><span class="g12-benefits-panel__benefit-label"><?php echo esc_html( $benefit['label'] ?? '' ); ?></span><span class="g12-benefits-panel__connector" aria-hidden="true"></span></li>
-						<?php endforeach; ?>
-					</ul>
-				<?php endif; ?>
-
-				<?php if ( $desktop_url ) : ?>
-					<div class="g12-benefits-panel__visual">
-						<picture>
-							<?php if ( $mobile_url ) : ?><source media="(max-width: 767px)" srcset="<?php echo esc_url( $mobile_url ); ?>"><?php endif; ?>
-							<img class="g12-benefits-panel__image" src="<?php echo esc_url( $desktop_url ); ?>" alt="<?php echo esc_attr( $settings['image_alt'] ?? '' ); ?>" loading="lazy">
-						</picture>
-					</div>
-				<?php endif; ?>
-
-				<?php if ( ! empty( $settings['panel_title'] ) || ! empty( $points ) ) : ?>
-					<aside class="g12-benefits-panel__eligibility">
-						<?php if ( ! empty( $settings['panel_title'] ) ) : ?><h3 class="g12-benefits-panel__panel-title"><?php echo esc_html( $settings['panel_title'] ); ?></h3><?php endif; ?>
-						<?php if ( ! empty( $points ) ) : ?>
-							<ul class="g12-benefits-panel__points">
+				<div class="g12-benefits-panel__text-column">
+					<?php if ( ! empty( $benefits ) ) : ?>
+						<div class="g12-benefits-panel__benefits-wrap"><ul class="g12-benefits-panel__benefits">
+							<?php foreach ( $benefits as $benefit ) : ?>
+								<li class="g12-benefits-panel__benefit elementor-repeater-item-<?php echo esc_attr( $benefit['_id'] ?? '' ); ?>"><span class="g12-benefits-panel__benefit-label"><?php echo esc_html( $benefit['label'] ?? '' ); ?></span><span class="g12-benefits-panel__connector" aria-hidden="true"></span></li>
+							<?php endforeach; ?>
+						</ul></div>
+					<?php endif; ?>
+					<?php if ( $desktop_url ) : ?>
+						<div class="g12-benefits-panel__visual g12-benefits-panel__visual--mobile"><picture><?php if ( $mobile_url ) : ?><source media="(max-width: 600px)" srcset="<?php echo esc_url( $mobile_url ); ?>"><?php endif; ?><img class="g12-benefits-panel__image" src="<?php echo esc_url( $desktop_url ); ?>" alt="<?php echo esc_attr( $settings['image_alt'] ?? '' ); ?>" loading="lazy"></picture></div>
+					<?php endif; ?>
+					<?php if ( ! empty( $settings['panel_title'] ) || ! empty( $points ) ) : ?>
+						<aside class="g12-benefits-panel__eligibility"><div class="g12-benefits-panel__eligibility-inner">
+							<?php if ( ! empty( $settings['panel_title'] ) ) : ?><h3 class="g12-benefits-panel__panel-title"><?php echo esc_html( $settings['panel_title'] ); ?></h3><?php endif; ?>
+							<?php if ( ! empty( $points ) ) : ?><ul class="g12-benefits-panel__points">
 								<?php foreach ( $points as $point ) : ?>
-									<li class="g12-benefits-panel__point elementor-repeater-item-<?php echo esc_attr( $point['_id'] ?? '' ); ?>"><span class="g12-benefits-panel__star" aria-hidden="true">★</span><span><?php echo esc_html( $point['text'] ?? '' ); ?></span></li>
+									<li class="g12-benefits-panel__point elementor-repeater-item-<?php echo esc_attr( $point['_id'] ?? '' ); ?>"><svg class="g12-benefits-panel__star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg><span><?php echo esc_html( $point['text'] ?? '' ); ?></span></li>
 								<?php endforeach; ?>
-							</ul>
-						<?php endif; ?>
-					</aside>
-				<?php endif; ?>
+							</ul><?php endif; ?>
+						</div></aside>
+					<?php endif; ?>
+				</div>
+				<?php if ( $desktop_url ) : ?><div class="g12-benefits-panel__visual g12-benefits-panel__visual--desktop"><img class="g12-benefits-panel__image" src="<?php echo esc_url( $desktop_url ); ?>" alt="<?php echo esc_attr( $settings['image_alt'] ?? '' ); ?>" loading="lazy"></div><?php endif; ?>
 			</div>
 		</div>
 
