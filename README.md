@@ -2,7 +2,7 @@
 
 ## G12 Mega Header
 
-Version 1.0.120 includes **G12 Mega Header** in Elementor's GTwelve category, based on the supplied header HTML. Add it to a full-width header container with zero padding. Use one global header per page.
+Version 1.0.121 includes **G12 Mega Header** in Elementor's GTwelve category, based on the supplied header HTML. Add it to a full-width header container with zero padding. Use one global header per page.
 
 The content sections expose the supplied labels, URLs, images, and image alt text, with Elementor dynamic tags enabled. The original menu hierarchy is preserved; these controls edit its existing content rather than adding or removing menu groups. Style controls cover accent, text, border, and top-bar colors. Header Settings includes Scroll Behavior and top-bar visibility. Version 1.0.118 defaults existing widgets to Sticky and Compact on Scroll; select Scroll with Page to opt out. The retired child-theme scroll.js is dequeued when this widget renders.
 
@@ -11,3 +11,5 @@ The widget includes its own fonts, images, CSS, and JavaScript. Desktop mega men
 Version 1.0.119 aligns desktop mega menus to the navigation link row and removes menu hover background fills.
 
 Version 1.0.120 widens desktop mega menus by 20 percent, keeps them centered within the header, and aligns the Digital dropdown beneath its menu item at the same vertical position.
+
+Version 1.0.121 preserves the edited dropdown link padding (4px 0) and adds seven typography groups under Fonts and Text Colors. Each supports font family, size, weight, line height, spacing and transform through Elementor. Style also includes text/hover/active colors, header/scrolled/panel backgrounds, responsive logo widths, header heights, gaps and padding. Leave optional controls unset to keep the supplied CSS.
