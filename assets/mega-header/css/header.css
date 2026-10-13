@@ -950,10 +950,13 @@ body.g12-mega-scroll-locked {
     border-bottom-color: #d8bd88;
   }
 .g12-header .g12-business-menu > .g12-mega {
-    display: grid;
+    display: none;
     grid-template-columns: minmax(0, 1fr);
     gap: 0;
     padding: 6px 12px;
+  }
+.g12-header .g12-business-menu.is-open > .g12-mega {
+    display: grid;
   }
 .g12-header .g12-business-menu .g12-mega__tabs {
     display: contents;
