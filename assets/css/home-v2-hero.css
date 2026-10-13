@@ -794,7 +794,7 @@
 .g12-home-v2-widget {
 	font-family: G12HeroGraphik, Arial, sans-serif;
 	padding: 72px 16px 40px;
-	min-height: 100svh;
+	min-height: 0;
 }
 
 .g12-home-v2-widget__inner {
