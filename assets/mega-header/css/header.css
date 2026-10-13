@@ -296,7 +296,7 @@
 }
 .g12-header .g12-mega__side-tab.is-active {
   color: #d6a557;
-  background: #ffffff0a;
+  background: transparent;
   border-radius: 8px;
 }
 .g12-header .g12-mega__body {
@@ -688,7 +688,7 @@ body.g12-mega-scroll-locked {
   border-radius: 8px;
 }
 .g12-header .g12-menu > li > a:hover {
-  background: var(--surface);
+  background: transparent;
   color: #987127;
 }
 .g12-header .g12-chevron {
@@ -757,7 +757,7 @@ body.g12-mega-scroll-locked {
   border-radius: 6px;
 }
 .g12-header .g12-dropdown a:hover {
-  background: var(--surface);
+  background: transparent;
   color: #987127;
 }
 .g12-header .g12-mega__tabs {
@@ -775,7 +775,7 @@ body.g12-mega-scroll-locked {
   border-color: var(--line);
 }
 .g12-header .g12-mega__side-tab.is-active {
-  background: #f6f2e8;
+  background: transparent;
   color: #987127;
 }
 .g12-header .g12-zone-card {
@@ -1143,12 +1143,29 @@ body.g12-mega-scroll-locked {
 .g12-header .g12-dropdown,
 .g12-header .g12-ecosystem-panel {
     top: 100%;
+    margin-block: 0;
     z-index: 10;
     max-height: none;
     overflow: visible;
   }
 .g12-header .g12-finance-menu .g12-mega {
     padding: 22px 28px;
+  }
+.g12-header .g12-mega {
+    left: var(--g12-mega-left, 0px);
+    right: auto;
+    width: var(--g12-mega-width, 100%);
+  }
+.g12-header .g12-mega__sidebar {
+    width: 26%;
+    padding-right: 18px;
+  }
+.g12-header .g12-mega__body {
+    min-width: 0;
+    flex: 1;
+  }
+.g12-header .g12-mega__panel {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 .g12-header .g12-finance-grid {
     gap: 16px 32px;
@@ -1209,6 +1226,16 @@ body.g12-mega-scroll-locked {
 
 .g12-header {font-family:Poppins,Arial,sans-serif;line-height:1.5;}
 .g12-header img {display:inline-block;}
+.g12-header .g12-menu > li:hover > a,
+.g12-header .g12-dropdown a:hover,
+.g12-header .g12-ecosystem-panel a:hover,
+.g12-header .g12-finance-group a:hover,
+.g12-header .g12-zone-card:hover,
+.g12-header .g12-mega__side-tab:hover > a,
+.g12-header .g12-tab:hover {
+  color: var(--gold);
+  background-color: transparent;
+}
 .g12-header[data-hide-topbar="yes"] .g12-topbar {display:none;}
 body.admin-bar .g12-header.g12-fixed-fallback {top:32px;}
 @media(max-width:782px){body.admin-bar .g12-header.g12-fixed-fallback {top:46px;}}

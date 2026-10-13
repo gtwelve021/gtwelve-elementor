@@ -46,9 +46,8 @@
       const menuBox = menu.getBoundingClientRect();
 
       if (!mobile.matches) {
-        const megaWidth = Math.min(menuBox.width * 1.1, navBox.width);
-        const megaLeft =
-          menuBox.left - navBox.left - (megaWidth - menuBox.width) / 2;
+        const megaWidth = menuBox.width;
+        const megaLeft = menuBox.left - navBox.left;
         header.style.setProperty("--g12-mega-left", `${megaLeft}px`);
         header.style.setProperty("--g12-mega-width", `${megaWidth}px`);
       } else {
