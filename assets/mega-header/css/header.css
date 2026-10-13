@@ -1156,6 +1156,10 @@ body.g12-mega-scroll-locked {
     right: auto;
     width: var(--g12-mega-width, 100%);
   }
+.g12-header .g12-dropdown {
+    left: var(--g12-dropdown-left, auto);
+    right: auto;
+  }
 .g12-header .g12-mega__sidebar {
     width: 26%;
     padding-right: 18px;

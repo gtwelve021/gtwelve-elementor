@@ -46,13 +46,22 @@
       const menuBox = menu.getBoundingClientRect();
 
       if (!mobile.matches) {
-        const megaWidth = menuBox.width;
-        const megaLeft = menuBox.left - navBox.left;
+        const megaWidth = Math.min(menuBox.width * 1.2, navBox.width);
+        const megaLeft = Math.max(0, Math.min(
+          menuBox.left - navBox.left - (megaWidth - menuBox.width) / 2,
+          navBox.width - megaWidth
+        ));
         header.style.setProperty("--g12-mega-left", `${megaLeft}px`);
         header.style.setProperty("--g12-mega-width", `${megaWidth}px`);
+        menu.querySelectorAll(':scope > li').forEach(item => {
+          const dropdown = item.querySelector(':scope > .g12-dropdown');
+          const link = item.querySelector(':scope > a');
+          if (dropdown && link) dropdown.style.setProperty('--g12-dropdown-left', `${link.getBoundingClientRect().left - navBox.left}px`);
+        });
       } else {
         header.style.removeProperty("--g12-mega-left");
         header.style.removeProperty("--g12-mega-width");
+        header.querySelectorAll('.g12-dropdown').forEach(dropdown => dropdown.style.removeProperty('--g12-dropdown-left'));
       }
     }
     function setMenu(isOpen) {
