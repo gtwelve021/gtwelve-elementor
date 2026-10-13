@@ -21,15 +21,12 @@
       if (header.classList.contains('has-open-menu')) document.body.classList.remove('g12-mega-scroll-locked');
     });
 
-    const supportsSticky = header.dataset.sticky !== "yes" &&
-      window.CSS &&
-      (CSS.supports("position", "sticky") ||
-        CSS.supports("position", "-webkit-sticky"));
+    const stickyEnabled = header.dataset.sticky === "yes";
     let fallbackSpacer;
     let fallbackTimer;
 
     function updateStickyFallback() {
-      if (!supportsSticky) {
+      if (stickyEnabled) {
         header.classList.add("g12-fixed-fallback");
         if (!fallbackSpacer) {
           fallbackSpacer = document.createElement("div");
@@ -37,7 +34,10 @@
           fallbackSpacer.setAttribute("aria-hidden", "true");
           header.after(fallbackSpacer);
         }
-        fallbackSpacer.style.height = `${header.offsetHeight}px`;
+        // Keep the full header's space as it compacts, avoiding scroll jumps.
+        if (!header.classList.contains('is-scrolled') || !fallbackSpacer.style.height) {
+          fallbackSpacer.style.height = `${header.offsetHeight}px`;
+        }
       }
     }
 
@@ -350,7 +350,7 @@
       }
 
       header.classList.toggle("is-scrolled", isCompact);
-      if (!supportsSticky) {
+      if (stickyEnabled) {
         clearTimeout(fallbackTimer);
         fallbackTimer = setTimeout(updateStickyFallback, 350);
       }

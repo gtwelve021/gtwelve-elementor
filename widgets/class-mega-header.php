@@ -35,7 +35,7 @@ class Mega_Header extends Widget_Base {
 
 	protected function register_controls(): void {
 		$this->start_controls_section( 'behavior', array( 'label' => esc_html__( 'Header Settings', 'gtwelve-elementor' ) ) );
-		$this->add_control( 'sticky', array( 'label' => esc_html__( 'Sticky Header', 'gtwelve-elementor' ), 'type' => Controls_Manager::SWITCHER, 'default' => 'yes', 'return_value' => 'yes' ) );
+		$this->add_control( 'sticky_mode', array( 'label' => esc_html__( 'Scroll Behavior', 'gtwelve-elementor' ), 'type' => Controls_Manager::SELECT, 'default' => 'sticky', 'options' => array( 'sticky' => esc_html__( 'Sticky and Compact on Scroll', 'gtwelve-elementor' ), 'normal' => esc_html__( 'Scroll with Page', 'gtwelve-elementor' ) ) ) );
 		$this->add_control( 'show_topbar', array( 'label' => esc_html__( 'Show Top Bar', 'gtwelve-elementor' ), 'type' => Controls_Manager::SWITCHER, 'default' => 'yes', 'return_value' => 'yes' ) );
 		$this->add_control( 'editing_note', array( 'type' => Controls_Manager::RAW_HTML, 'raw' => esc_html__( 'Edit the supplied menu content in the sections below. The original menu structure is preserved. Use this widget in a full-width header container with no padding.', 'gtwelve-elementor' ) ) );
 		$this->end_controls_section();
@@ -58,6 +58,14 @@ class Mega_Header extends Widget_Base {
 
 	protected function render(): void {
 		$settings = $this->get_settings_for_display();
+		// The retired theme header's scroll listener dereferences its missing wrapper.
+		// Remove only that legacy file when this replacement header is rendered.
+		$scripts = wp_scripts();
+		foreach ( $scripts->registered as $handle => $script ) {
+			if ( preg_match( '~(?:^|/)themes/g12-child/assets/js/scroll\.js(?:\?|$)~', (string) $script->src ) ) {
+				wp_dequeue_script( $handle );
+			}
+		}
 		$replacements = array( '{{instance}}' => esc_attr( $this->get_id() ) );
 		foreach ( $this->field_definitions() as $field ) {
 			$key = $field['key'];
@@ -76,7 +84,7 @@ class Mega_Header extends Widget_Base {
 			}
 		}
 		$template = file_get_contents( GTWELVE_ELEMENTOR_PATH . 'includes/mega-header/template.html' );
-		$attributes = 'data-instance="' . esc_attr( $this->get_id() ) . '" data-sticky="' . ( 'yes' === ( $settings['sticky'] ?? 'yes' ) ? 'yes' : 'no' ) . '" data-hide-topbar="' . ( 'yes' === ( $settings['show_topbar'] ?? 'yes' ) ? 'no' : 'yes' ) . '"';
+		$attributes = 'data-instance="' . esc_attr( $this->get_id() ) . '" data-sticky="' . ( 'normal' === ( $settings['sticky_mode'] ?? 'sticky' ) ? 'no' : 'yes' ) . '" data-hide-topbar="' . ( 'yes' === ( $settings['show_topbar'] ?? 'yes' ) ? 'no' : 'yes' ) . '"';
 		$template = str_replace( 'data-g12-mega-header=""', 'data-g12-mega-header="" ' . $attributes, $template );
 		// The template is plugin-owned; all user-controlled substitutions are escaped above.
 		echo strtr( $template, $replacements ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
