@@ -1,4 +1,7 @@
 .g12-feature-benefits {
+	position: relative;
+	min-width: 0;
+	touch-action: pan-y;
 	width: 100%;
 	overflow: hidden;
 }
@@ -10,7 +13,19 @@
 	box-sizing: border-box;
 }
 
+/* Keep the track usable when Elementor optimizes its shared Swiper CSS. */
+.g12-feature-benefits__wrapper {
+	display: flex;
+	width: 100%;
+	position: relative;
+	box-sizing: content-box;
+	transition-property: transform;
+}
+
 .g12-feature-benefits__item {
+	flex-shrink: 0;
+	width: 100%;
+	position: relative;
 	height: auto;
 	min-width: 0;
 	text-align: center;

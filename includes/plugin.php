@@ -170,7 +170,7 @@ final class Plugin {
 		wp_register_style(
 			'gtwelve-elementor-feature-benefits',
 			GTWELVE_ELEMENTOR_URL . 'assets/css/feature-benefits.css',
-			array(),
+			array( 'swiper' ),
 			GTWELVE_ELEMENTOR_VERSION
 		);
 
