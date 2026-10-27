@@ -1,5 +1,27 @@
 # gtwelve-elementor
 
+Custom Elementor widgets for G12 pages.
+
+**Latest version: 1.0.128**
+
+## Latest changes
+
+### 1.0.128
+
+- Fixed the G12 Feature Benefits carousel appearing blank or stacking cards vertically when Swiper layout styles were missing.
+- Added the Swiper stylesheet dependency and scoped track and slide layout rules.
+- Verified the fix in a browser preview at desktop, tablet, and mobile widths, including autoplay and looping. PHP syntax checks passed for all 32 PHP files.
+
+### 1.0.127
+
+- Removed the Home V2 hero's full-screen minimum height that caused large desktop gaps.
+
+## Installation and updates
+
+Upload the release ZIP containing the `gtwelve-elementor/` folder through **WordPress > Plugins > Add New > Upload Plugin**. When updating an existing installation, replace the installed plugin with the uploaded version. Elementor is required.
+
+After updating, clear the site and CDN caches. If styles remain stale, regenerate Elementor CSS and data, then check the public page.
+
 ## G12 Mega Header
 
 Version 1.0.126 includes **G12 Mega Header** in Elementor's GTwelve category, based on the supplied header HTML. Add it to a full-width header container with zero padding. Use one global header per page.
